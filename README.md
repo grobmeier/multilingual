@@ -168,7 +168,7 @@ plugin merely adds the global `lang` variable and swaps out context based on con
 
 ## Link between translated posts or pages
 
-URLs can change and manually linking to translated posts or pages isn't the best idea. This plugin helps you link posts together using a shared translation ID. With [octopress](https://github.com/octopress/octopress), you'll be able to automatically add translation IDs to pages and posts. Then you can reference the array of translations with `post.tranlsations` or `page.translations`. Here's the syntax:
+URLs can change and manually linking to translated posts or pages isn't the best idea. This plugin helps you link posts together using a shared translation ID. With [octopress](https://github.com/octopress/octopress), you'll be able to automatically add translation IDs to pages and posts. Then you can reference the array of translations with `post.translations` or `page.translations`. Here's the syntax:
 
 ```
 $ octopress id path [path path...]
