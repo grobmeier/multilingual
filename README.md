@@ -142,7 +142,7 @@ Your files might look like this:
 title: English title
 
 # lang_de.yml
-title: Deutsch titel
+title: Deutscher Titel
 ```
 
 Now in your layouts or includes you can reference these dictionaries under the global variable `lang`. The configured page or post
@@ -153,7 +153,7 @@ language will determine which language dictionary is used. For example:
 {{ lang.title }} => English title
 
 # On a page or post where lang: de
-{{ lang.title }} => Deutsch titel
+{{ lang.title }} => Deutscher Titel
 ```
 
 If no language is configured for a page or post, it will default to the site's default language.
@@ -168,7 +168,7 @@ plugin merely adds the global `lang` variable and swaps out context based on con
 
 ## Link between translated posts or pages
 
-URLs can change and manually linking to translated posts or pages isn't the best idea. This plugin helps you link posts together using a shared translation ID. With [octopress](https://github.com/octopress/octopress), you'll be able to automatically add translation IDs to pages and posts. Then you can reference the array of translations with `post.tranlsations` or `page.translations`. Here's the syntax:
+URLs can change and manually linking to translated posts or pages isn't the best idea. This plugin helps you link posts together using a shared translation ID. With [octopress](https://github.com/octopress/octopress), you'll be able to automatically add translation IDs to pages and posts. Then you can reference the array of translations with `post.translations` or `page.translations`. Here's the syntax:
 
 ```
 $ octopress id path [path path...]
@@ -296,13 +296,13 @@ The `set_lang` tag will also accept variables, for example:
 
 ```
 {% assign lang = 'de' %}
-{% set_lang lang %}   # equivilent to {% set_lang de %}
+{% set_lang lang %}   # equivalent to {% set_lang de %}
 
 # On some page
 {% include some_partial.html lang='de' %}
 
 # In _includes/some_partial.html
-{% set_lang include.lang %}    # equivilent to {% set_lang de %} 
+{% set_lang include.lang %}    # equivalent to {% set_lang de %} 
 ```
 
 If you have the [octopress-linkblog](https://github.com/octopress/linkblog) plugin installed, this will also change languages for your
